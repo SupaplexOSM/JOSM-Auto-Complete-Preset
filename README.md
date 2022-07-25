@@ -1,2 +1,4 @@
 # JOSM-Auto-Complete-Preset
-A preset for JOSM to autocomplete frequently used keys and values that are not covered by the standard preset lists.
+This is a preset for JOSM that only provides a word list for frequently used keys and values (by me). These can be autocompleted during input into JOSM.
+
+See https://josm.openstreetmap.de/wiki/TaggingPresets for information about how Presets in JOSM are working.
