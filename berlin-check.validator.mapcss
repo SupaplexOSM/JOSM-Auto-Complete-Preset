@@ -1,0 +1,20 @@
+*["highway"="footway"][!"footway"]["is_sidepath"!~/^(yes|no)$/],
+*["highway"="cycleway"]["is_sidepath"!~/^(yes|no)$/] {
+    throwWarning: "missing tag \"is_sidepath=yes|no\"";
+    fixAdd: "is_sidepath=yes|no";
+}
+
+*["footway"="sidewalk"]["is_sidepath"!="yes"] {
+    throwError: "missing tag \"is_sidepath=yes\"";
+    fixAdd: "is_sidepath=yes";
+}
+
+*["is_sidepath"="yes"][!"is_sidepath:of"] {
+    throwError: "missing is_sidepath:of";
+    fixAdd: "is_sidepath:of";
+}
+
+*["is_sidepath:of"][!"is_sidepath:of:name"] {
+    throwError: "missing is_sidepath:of:name";
+    fixAdd: "is_sidepath:of:name";
+}
