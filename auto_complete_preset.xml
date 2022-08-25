@@ -21,17 +21,24 @@
     <combo key="parking:condition:left:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
     <combo key="parking:condition:right:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
     <combo key="parking:condition:both:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:condition:left:residents" />
+    <combo key="parking:condition:right:residents" />
+    <combo key="parking:condition:both:residents" />
 <!-- street side parking -->
     <combo key="parking:orientation" values="parallel,diagonal,perpendicular" />
     <combo key="parking:street_side:of" values="primary,secondary,tertiary,residential,living_street,unclassified" />
     <combo key="parking:street_side:of:name" />
+<!-- maxstay:conditional -->
+    <combo key="maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),load-unload @ (Mo-Su 00:00-24:00)" />
+<!-- bicycle_parking:position -->
+    <combo key="bicycle_parking:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
+<!-- bicycle_rental:position -->
+    <combo key="bicycle_rental:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
 <!-- is_sidepath -->
     <combo key="is_sidepath" values="yes" />
     <combo key="is_sidepath:of" values="motorway,motorway_link,primary,primary_link,secondary,secondary_link,tertiary,tertiary_link,residential,living_street,unclassified,pedestrian,service,cycleway" />
     <combo key="is_sidepath:of:name" />
     <combo key="is_sidepath:of:ref" />
-<!-- bicycle_parking:position -->
-    <combo key="bicycle_parking:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
 <!-- separation -->
     <combo key="separation:left" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
     <combo key="separation:right" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
@@ -80,20 +87,38 @@
     <combo key="cycleway:both:traffic_mode:left" values="no,motor_vehicle,bicycle,foot,psv" />
     <combo key="cycleway:both:traffic_mode:right" values="no,motor_vehicle,bicycle,foot,psv" />
     <combo key="cycleway:both:traffic_mode:both" values="no,motor_vehicle,bicycle,foot,psv" />
+<!-- sidewalk -->
+    <combo key="sidewalk:left" values="separate,no" />
+    <combo key="sidewalk:right" values="separate,no" />
+    <combo key="sidewalk:both" values="separate,no" />
 <!-- crossing -->
     <combo key="crossing:kerb_extension" values="left,right,both" />
     <combo key="crossing:buffer_marking" values="left,right,both" />
     <combo key="crossing:buffer_protection" values="left,right,both" />
+<!-- turn:lanes -->
+    <combo key="turn:lanes:forward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
+    <combo key="turn:lanes:backward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
+<!-- maxspeed:conditional -->
+    <combo key="maxspeed:conditional" />
 <!-- dual_carriageway -->
     <combo key="dual_carriageway" values="yes" />
+<!-- area:highway -->
+    <combo key="area:highway" values="motorway,primary,secondary,tertiary,residential,unclassified,pedestrian,living_street,service,footway,cycleway,path,steps,traffic_island,prohibited,bus_stop,shoulder" />
 <!-- amenity -->
     <combo key="amenity" values="cyclist_leaning_rail,traffic_park" />
+<!-- post_box -->
+    <combo key="post_box:type" values="pillar,lamp" />
+    <combo key="post_box:apertures" />
 <!-- barrier -->
     <combo key="barrier" values="collision_protection,barrier_board,palisade,parking_lane" />
+<!-- natural -->
+    <combo key="natural" values="tree_stump" />
 <!-- landuse -->
     <combo key="landuse" values="tree_pit" />
 <!-- landcover -->
     <combo key="landcover" values="ground,gravel,woodchips" />
+<!-- man_made -->
+    <combo key="man_made" values="planter" />
 <!-- highway -->
     <combo key="highway" values="traffic_sign" />
 <!-- playground -->
@@ -105,6 +130,14 @@
     <combo key="waste" values="trash,trash;cigarettes" />
 <!-- operator -->
     <combo key="operator" values="Berliner Stadtreinigung" />
+<!-- access:conditional -->
+    <combo key="access:conditional" values="no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00)" />
+<!-- pump:style -->
+    <combo key="pump:style" values="FSH-L,Rümmler,Wolf,Krause,Lauchhammer,Borsig,Neue Krause,Freyer,Pankow" />
+<!-- drinking_water:legal -->
+    <combo key="drinking_water:legal" values="no,yes,unsigned" />
+<!-- source:width -->
+    <combo key="source:width" values="ARCore,estimated,aerial imagery,ALKIS" />
 <!-- preset -->
 <!-- <combo key="" values="" /> -->
   </item>
