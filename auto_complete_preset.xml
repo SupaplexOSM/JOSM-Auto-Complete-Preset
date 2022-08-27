@@ -39,6 +39,34 @@
     <combo key="is_sidepath:of" values="motorway,motorway_link,primary,primary_link,secondary,secondary_link,tertiary,tertiary_link,residential,living_street,unclassified,pedestrian,service,cycleway" />
     <combo key="is_sidepath:of:name" />
     <combo key="is_sidepath:of:ref" />
+<!-- cycleway:width -->
+    <combo key="cycleway:left:width" />
+    <combo key="cycleway:right:width" />
+    <combo key="cycleway:both:width" />
+<!-- cycleway:surface -->
+    <combo key="cycleway:left:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
+    <combo key="cycleway:right:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
+    <combo key="cycleway:both:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
+<!-- cycleway:smoothness -->
+    <combo key="cycleway:left:smoothness" values="excellent,good,intermediate,bad,very_bad,impassable" />
+    <combo key="cycleway:right:smoothness" values="excellent,good,intermediate,bad,very_bad,impassable" />
+    <combo key="cycleway:both:smoothness" values="excellent,good,intermediate,bad,very_bad,impassable" />
+<!-- cycleway:surface:colour -->
+    <combo key="cycleway:left:surface:colour" values="green,red" />
+    <combo key="cycleway:right:surface:colour" values="green,red" />
+    <combo key="cycleway:both:surface:colour" values="green,red" />
+<!-- cycleway:lane -->
+    <combo key="cycleway:left:lane" values="exclusive,advisory,pictogram" />
+    <combo key="cycleway:right:lane" values="exclusive,advisory,pictogram" />
+    <combo key="cycleway:both:lane" values="exclusive,advisory,pictogram" />
+<!-- cycleway:bicycle -->
+    <combo key="cycleway:left:bicycle" values="yes,designated" />
+    <combo key="cycleway:right:bicycle" values="yes,designated" />
+    <combo key="cycleway:both:bicycle" values="yes,designated" />
+<!-- cycleway:traffic_sign -->
+    <combo key="cycleway:left:traffic_sign" values="DE:237,DE:240,DE:241,DE:239,1022-10" />
+    <combo key="cycleway:right:traffic_sign" values="DE:237,DE:240,DE:241,DE:239,1022-10" />
+    <combo key="cycleway:both:traffic_sign" values="DE:237,DE:240,DE:241,DE:239,1022-10" />
 <!-- separation -->
     <combo key="separation:left" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
     <combo key="separation:right" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
@@ -106,6 +134,8 @@
     <combo key="area:highway" values="motorway,primary,secondary,tertiary,residential,unclassified,pedestrian,living_street,service,footway,cycleway,path,steps,traffic_island,prohibited,bus_stop,shoulder" />
 <!-- amenity -->
     <combo key="amenity" values="cyclist_leaning_rail,traffic_park" />
+<!-- leisure -->
+    <combo key="leisure" values="parklet" />
 <!-- post_box -->
     <combo key="post_box:type" values="pillar,lamp" />
     <combo key="post_box:apertures" />
