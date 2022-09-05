@@ -4,9 +4,9 @@
     fixAdd: "is_sidepath=yes|no";
 }
 
-*["footway"="sidewalk"]["is_sidepath"!="yes"] {
-    throwError: "missing tag \"is_sidepath=yes\"";
-    fixAdd: "is_sidepath=yes";
+*[footway=sidewalk][is_sidepath=no] {
+    throwError: "tag \"is_sidepath=no\" combined with \"footway=sidewalk\"";
+    fixRemove: "is_sidepath=no";
 }
 
 *["is_sidepath"="yes"][!"is_sidepath:of"] {
