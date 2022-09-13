@@ -21,6 +21,12 @@
     <combo key="parking:condition:left:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
     <combo key="parking:condition:right:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
     <combo key="parking:condition:both:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:condition:left:maxstay" values="30 minutes,1 hour,2 hours,1 day,3 days,1 week,3 nights" />
+    <combo key="parking:condition:right:maxstay" values="30 minutes,1 hour,2 hours,1 day,3 days,1 week,3 nights" />
+    <combo key="parking:condition:both:maxstay" values="30 minutes,1 hour,2 hours,1 day,3 days,1 week,3 nights" />
+    <combo key="parking:condition:left:maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:condition:right:maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:condition:both:maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
     <combo key="parking:condition:left:residents" />
     <combo key="parking:condition:right:residents" />
     <combo key="parking:condition:both:residents" />
@@ -68,21 +74,21 @@
     <combo key="cycleway:right:traffic_sign" values="DE:237,DE:240,DE:241,DE:239,1022-10" />
     <combo key="cycleway:both:traffic_sign" values="DE:237,DE:240,DE:241,DE:239,1022-10" />
 <!-- separation -->
-    <combo key="separation:left" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="separation:right" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="separation:both" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:separation:left" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:separation:right" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:separation:both" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:left:separation:left" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:left:separation:right" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:left:separation:both" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:right:separation:left" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:right:separation:right" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:right:separation:both" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:both:separation:left" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:both:separation:right" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
-    <combo key="cycleway:both:separation:both" values="bollard,flex_post,vertical_panel,dots,lane_separator,planter,kerb,parking_lane,railing,jersey_barrier,guard_rail,structure,ditch,grass_verge,tree_row,no,cone,psv_lane" />
+    <combo key="separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:left:separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:left:separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:left:separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:right:separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:right:separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:right:separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:both:separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:both:separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+    <combo key="cycleway:both:separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
 <!-- marking -->
     <combo key="marking:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
     <combo key="marking:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
@@ -100,21 +106,21 @@
     <combo key="cycleway:both:separation:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
     <combo key="cycleway:both:separation:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
 <!-- traffic_mode -->
-    <combo key="traffic_mode:left" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="traffic_mode:right" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="traffic_mode:both" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:traffic_mode:left" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:traffic_mode:right" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:traffic_mode:both" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:left:traffic_mode:left" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:left:traffic_mode:right" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:left:traffic_mode:both" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:right:traffic_mode:left" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:right:traffic_mode:right" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:right:traffic_mode:both" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:both:traffic_mode:left" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:both:traffic_mode:right" values="no,motor_vehicle,bicycle,foot,psv" />
-    <combo key="cycleway:both:traffic_mode:both" values="no,motor_vehicle,bicycle,foot,psv" />
+    <combo key="traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:left:traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:left:traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:left:traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:right:traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:right:traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:right:traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:both:traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:both:traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
+    <combo key="cycleway:both:traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
 <!-- sidewalk -->
     <combo key="sidewalk:left" values="separate,no" />
     <combo key="sidewalk:right" values="separate,no" />
@@ -126,6 +132,8 @@
 <!-- turn:lanes -->
     <combo key="turn:lanes:forward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
     <combo key="turn:lanes:backward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
+<!-- lane_markings -->
+    <combo key="lane_markings" values="yes,no" />
 <!-- maxspeed:conditional -->
     <combo key="maxspeed:conditional" />
 <!-- dual_carriageway -->
@@ -136,6 +144,8 @@
     <combo key="amenity" values="cyclist_leaning_rail,traffic_park" />
 <!-- leisure -->
     <combo key="leisure" values="parklet" />
+<!-- outdoor_seating -->
+    <combo key="outdoor_seating" values="parklet" />
 <!-- post_box -->
     <combo key="post_box:type" values="pillar,lamp" />
     <combo key="post_box:apertures" />
@@ -162,6 +172,8 @@
     <combo key="operator" values="Berliner Stadtreinigung" />
 <!-- access:conditional -->
     <combo key="access:conditional" values="no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00)" />
+<!-- bench:type -->
+    <combo key="bench:type" values="seated,stand_up,block,lounger,platform" />
 <!-- pump:style -->
     <combo key="pump:style" values="FSH-L,Rümmler,Wolf,Krause,Lauchhammer,Borsig,Neue Krause,Freyer,Pankow" />
 <!-- drinking_water:legal -->
