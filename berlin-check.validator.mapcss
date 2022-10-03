@@ -1,4 +1,4 @@
-*["highway"="footway"][!"footway"]["is_sidepath"!~/^(yes|no)$/][indoor!=yes],
+*["highway"="footway"][!"footway"]["is_sidepath"!~/^(yes|no)$/][indoor!=yes][area!=yes],
 *["highway"="cycleway"]["is_sidepath"!~/^(yes|no)$/] {
     throwWarning: "Berlin-Check: missing tag \"is_sidepath=yes|no\"";
 }
