@@ -1,20 +1,24 @@
-*["highway"="footway"][!"footway"]["is_sidepath"!~/^(yes|no)$/],
+*["highway"="footway"][!"footway"]["is_sidepath"!~/^(yes|no)$/][indoor!=yes],
 *["highway"="cycleway"]["is_sidepath"!~/^(yes|no)$/] {
-    throwWarning: "missing tag \"is_sidepath=yes|no\"";
-    fixAdd: "is_sidepath=yes|no";
+    throwWarning: "Berlin-Check: missing tag \"is_sidepath=yes|no\"";
 }
 
 *[footway=sidewalk][is_sidepath=no] {
-    throwError: "tag \"is_sidepath=no\" combined with \"footway=sidewalk\"";
-    fixRemove: "is_sidepath=no";
+    throwError: "Berlin-Check: tag \"is_sidepath=no\" combined with \"footway=sidewalk\"";
+    fixRemove: "is_sidepath";
 }
 
 *["is_sidepath"="yes"][!"is_sidepath:of"] {
-    throwError: "missing is_sidepath:of";
+    throwError: "Berlin-Check: missing is_sidepath:of";
     fixAdd: "is_sidepath:of";
 }
 
 *["is_sidepath:of"][!"is_sidepath:of:name"] {
-    throwError: "missing is_sidepath:of:name";
+    throwError: "Berlin-Check: missing is_sidepath:of:name";
     fixAdd: "is_sidepath:of:name";
+}
+
+way["highway"="path"]["is_sidepath"="yes"]["bicycle"=~/yes|designated/][!"oneway"][!"oneway:bicycle"]
+{
+    throwError: "Berlin-Check: missing \"oneway\" or \"oneway:bicycle\" information for bicycle routing";
 }
