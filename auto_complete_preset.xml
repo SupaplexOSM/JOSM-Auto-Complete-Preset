@@ -30,10 +30,15 @@
     <combo key="parking:condition:left:residents" />
     <combo key="parking:condition:right:residents" />
     <combo key="parking:condition:both:residents" />
+<!-- parking lane surface -->
+    <combo key="parking:lane:left:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
+    <combo key="parking:lane:right:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
+    <combo key="parking:lane:both:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
 <!-- street side parking -->
     <combo key="parking:orientation" values="parallel,diagonal,perpendicular" />
     <combo key="parking:street_side:of" values="primary,secondary,tertiary,residential,living_street,unclassified" />
     <combo key="parking:street_side:of:name" />
+    <combo key="parking:position" values="on_kerb,half_on_kerb,shoulder" />
 <!-- maxstay:conditional -->
     <combo key="maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),load-unload @ (Mo-Su 00:00-24:00)" />
 <!-- bicycle_parking:position -->
@@ -144,6 +149,9 @@
     <combo key="amenity" values="cyclist_leaning_rail,traffic_park" />
 <!-- leisure -->
     <combo key="leisure" values="parklet" />
+<!-- parklet -->
+    <combo key="parklet:greenery" values="yes,no" />
+    <combo key="parklet:seatings" values="yes,no" />
 <!-- outdoor_seating -->
     <combo key="outdoor_seating" values="parklet" />
 <!-- post_box -->
@@ -180,6 +188,8 @@
     <combo key="drinking_water:legal" values="no,yes,unsigned" />
 <!-- source:width -->
     <combo key="source:width" values="ARCore,estimated,aerial imagery,ALKIS" />
+<!-- wikimedia_commons -->
+    <combo key="wikimedia_commons" />
 <!-- preset -->
 <!-- <combo key="" values="" /> -->
   </item>
