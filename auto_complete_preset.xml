@@ -1,50 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
   <item name="Auto Complete Presets">
-<!-- parking lane -->
-    <combo key="parking:lane:left" values="parallel,diagonal,perpendicular,separate,no" />
-    <combo key="parking:lane:right" values="parallel,diagonal,perpendicular,separate,no" />
-    <combo key="parking:lane:both" values="parallel,diagonal,perpendicular,separate,no" />
-    <combo key="parking:lane:left:parallel" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:left:diagonal" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:left:perpendicular" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:right:parallel" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:right:diagonal" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:right:perpendicular" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:both:parallel" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:both:diagonal" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-    <combo key="parking:lane:both:perpendicular" values="on_street,street_side,half_on_kerb,on_kerb,shoulder" />
-<!-- parking condition -->
-    <combo key="parking:condition:left" values="free,no_parking,no_stopping,disc,ticket,residents,ticket;residents,loading,customers,private,disabled" />
-    <combo key="parking:condition:right" values="free,no_parking,no_stopping,disc,ticket,residents,ticket;residents,loading,customers,private,disabled" />
-    <combo key="parking:condition:both" values="free,no_parking,no_stopping,disc,ticket,residents,ticket;residents,loading,customers,private,disabled" />
-    <combo key="parking:condition:left:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
-    <combo key="parking:condition:right:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
-    <combo key="parking:condition:both:conditional" values="no_parking @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),disc @ (Mo-Su 00:00-24:00),ticket @ (Mo-Su 00:00-24:00),ticket;residents @ (Mo-Su 00:00-24:00),loading @ (Mo-Su 00:00-24:00)" />
-    <combo key="parking:condition:left:maxstay" values="30 minutes,1 hour,2 hours,1 day,3 days,1 week,3 nights" />
-    <combo key="parking:condition:right:maxstay" values="30 minutes,1 hour,2 hours,1 day,3 days,1 week,3 nights" />
-    <combo key="parking:condition:both:maxstay" values="30 minutes,1 hour,2 hours,1 day,3 days,1 week,3 nights" />
-    <combo key="parking:condition:left:maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
-    <combo key="parking:condition:right:maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
-    <combo key="parking:condition:both:maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
-    <combo key="parking:condition:left:residents" />
-    <combo key="parking:condition:right:residents" />
-    <combo key="parking:condition:both:residents" />
-<!-- parking lane surface -->
-    <combo key="parking:lane:left:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
-    <combo key="parking:lane:right:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
-    <combo key="parking:lane:both:surface" values="asphalt,paving_stones,sett,concrete,concrete:plates" />
-<!-- street side parking -->
-    <combo key="parking:orientation" values="parallel,diagonal,perpendicular" />
-    <combo key="parking:street_side:of" values="primary,secondary,tertiary,residential,living_street,unclassified" />
-    <combo key="parking:street_side:of:name" />
-    <combo key="parking:position" values="on_kerb,half_on_kerb,shoulder" />
-<!-- maxstay:conditional -->
-    <combo key="maxstay:conditional" values="30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),load-unload @ (Mo-Su 00:00-24:00)" />
-<!-- bicycle_parking:position -->
-    <combo key="bicycle_parking:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
-<!-- bicycle_rental:position -->
-    <combo key="bicycle_rental:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
+
+<!-- preset -->
+<!-- <combo key="" values="" /> -->
+
 <!-- is_sidepath -->
     <combo key="is_sidepath" values="yes" />
     <combo key="is_sidepath:of" values="motorway,motorway_link,primary,primary_link,secondary,secondary_link,tertiary,tertiary_link,residential,living_street,unclassified,pedestrian,service,cycleway" />
@@ -134,6 +94,10 @@
     <combo key="crossing:kerb_extension" values="left,right,both" />
     <combo key="crossing:buffer_marking" values="left,right,both" />
     <combo key="crossing:buffer_protection" values="left,right,both" />
+<!-- bicycle_parking:position -->
+    <combo key="bicycle_parking:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
+<!-- bicycle_rental:position -->
+    <combo key="bicycle_rental:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
 <!-- turn:lanes -->
     <combo key="turn:lanes:forward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
     <combo key="turn:lanes:backward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
@@ -152,6 +116,8 @@
 <!-- parklet -->
     <combo key="parklet:greenery" values="yes,no" />
     <combo key="parklet:seatings" values="yes,no" />
+<!-- pitch:net -->
+    <combo key="pitch:net" values="yes,no" />
 <!-- outdoor_seating -->
     <combo key="outdoor_seating" values="parklet" />
 <!-- post_box -->
@@ -178,19 +144,19 @@
     <combo key="waste" values="trash,trash;cigarettes" />
 <!-- operator -->
     <combo key="operator" values="Berliner Stadtreinigung" />
-<!-- access:conditional -->
-    <combo key="access:conditional" values="no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00)" />
+<!-- private -->
+    <combo key="private" values="residents,employees,commercial" />
 <!-- bench:type -->
     <combo key="bench:type" values="seated,stand_up,block,lounger,platform" />
 <!-- pump:style -->
     <combo key="pump:style" values="FSH-L,Rümmler,Wolf,Krause,Lauchhammer,Borsig,Neue Krause,Freyer,Pankow" />
+<!-- pump:status -->
+    <combo key="pump:status" values="ok,broken,out_of_order,locked,missing_beam,blocked" />
 <!-- drinking_water:legal -->
     <combo key="drinking_water:legal" values="no,yes,unsigned" />
 <!-- source:width -->
     <combo key="source:width" values="ARCore,estimated,aerial imagery,ALKIS" />
 <!-- wikimedia_commons -->
     <combo key="wikimedia_commons" />
-<!-- preset -->
-<!-- <combo key="" values="" /> -->
   </item>
 </presets>
