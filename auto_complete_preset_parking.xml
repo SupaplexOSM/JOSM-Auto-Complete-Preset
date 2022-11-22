@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
+  <item name="Auto Complete Presets for street parking">
+
+<!-- 1 - parking as attribute of the highway centerline -->
+
+<!-- physical attributes -->
+    <combo key="parking:left" values="lane,street_side,on_kerb,half_on_kerb,shoulder,no,separate,yes" />
+    <combo key="parking:right" values="lane,street_side,on_kerb,half_on_kerb,shoulder,no,separate,yes" />
+    <combo key="parking:both" values="lane,street_side,on_kerb,half_on_kerb,shoulder,no,separate,yes" />
+    <combo key="parking:left:orientation" values="parallel,diagonal,perpendicular" />
+    <combo key="parking:right:orientation" values="parallel,diagonal,perpendicular" />
+    <combo key="parking:both:orientation" values="parallel,diagonal,perpendicular" />
+    <combo key="parking:left:surface" values="asphalt,concrete,concrete:plates,paving_stones,sett,compacted,fine_gravel,ground" />
+    <combo key="parking:right:surface" values="asphalt,concrete,concrete:plates,paving_stones,sett,compacted,fine_gravel,ground" />
+    <combo key="parking:both:surface" values="asphalt,concrete,concrete:plates,paving_stones,sett,compacted,fine_gravel,ground" />
+    <combo key="parking:left:width" />
+    <combo key="parking:right:width" />
+    <combo key="parking:both:width" />
+    <combo key="parking:left:capacity" />
+    <combo key="parking:right:capacity" />
+    <combo key="parking:both:capacity" />
+    <combo key="parking:left:markings" values="yes,no" />
+    <combo key="parking:right:markings" values="yes,no" />
+    <combo key="parking:both:markings" values="yes,no" />
+    <combo key="parking:left:direction" values="back_in,head_in" />
+    <combo key="parking:right:direction" values="back_in,head_in" />
+    <combo key="parking:both:direction" values="back_in,head_in" />
+    <combo key="parking:both:staggered" values="yes,no" />
+<!-- legal attributes (access in general) -->
+    <combo key="parking:left:access" values="yes,no,private,permissive,permit,customers" />
+    <combo key="parking:right:access" values="yes,no,private,permissive,permit,customers" />
+    <combo key="parking:both:access" values="yes,no,private,permissive,permit,customers" />
+    <combo key="parking:left:access:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:access:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:access:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00)" />
+<!-- legal attributes (access for specific transport modes) -->
+    <combo key="parking:left:motorcar" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:motorcar" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:motorcar" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:motorcar:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:motorcar:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:motorcar:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:motorhome" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:motorhome" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:motorhome" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:motorhome:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:motorhome:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:motorhome:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:goods" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:goods" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:goods" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:goods:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:goods:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:goods:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:hgv" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:hgv" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:hgv" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:hgv:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:hgv:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:hgv:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:bus" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:bus" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:bus" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:bus:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:bus:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:bus:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:taxi" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:taxi" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:taxi" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:taxi:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:taxi:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:taxi:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:car_sharing" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:car_sharing" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:car_sharing" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:car_sharing:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:car_sharing:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:car_sharing:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:emergency" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:emergency" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:emergency" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:emergency:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:emergency:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:emergency:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:disabled" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:right:disabled" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:both:disabled" values="yes,no,private,permissive,permit,customers,designated" />
+    <combo key="parking:left:disabled:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:disabled:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:disabled:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00),designated @ (Mo-Su 00:00-24:00)" />
+<!-- legal attributes (maxstay) -->
+    <combo key="parking:left:maxstay" values="2 minutes,3 minutes,5 minutes,10 minutes,15 minutes,20 minutes,30 minutes,1 hour,1.5 hour,2 hours,1 day,3 days,1 week,1 night,3 nights" />
+    <combo key="parking:right:maxstay" values="2 minutes,3 minutes,5 minutes,10 minutes,15 minutes,20 minutes,30 minutes,1 hour,1.5 hour,2 hours,1 day,3 days,1 week,1 night,3 nights" />
+    <combo key="parking:both:maxstay" values="2 minutes,3 minutes,5 minutes,10 minutes,15 minutes,20 minutes,30 minutes,1 hour,1.5 hour,2 hours,1 day,3 days,1 week,1 night,3 nights" />
+    <combo key="parking:left:maxstay:conditional" values="no @ residents,2 minutes @ (Mo-Su 00:00-24:00),3 minutes @ (Mo-Su 00:00-24:00),5 minutes @ (Mo-Su 00:00-24:00),10 minutes @ (Mo-Su 00:00-24:00),15 minutes @ (Mo-Su 00:00-24:00),20 minutes @ (Mo-Su 00:00-24:00),30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),1.5 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),1 night @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:maxstay:conditional" values="no @ residents,2 minutes @ (Mo-Su 00:00-24:00),3 minutes @ (Mo-Su 00:00-24:00),5 minutes @ (Mo-Su 00:00-24:00),10 minutes @ (Mo-Su 00:00-24:00),15 minutes @ (Mo-Su 00:00-24:00),20 minutes @ (Mo-Su 00:00-24:00),30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),1.5 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),1 night @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:maxstay:conditional" values="no @ residents,2 minutes @ (Mo-Su 00:00-24:00),3 minutes @ (Mo-Su 00:00-24:00),5 minutes @ (Mo-Su 00:00-24:00),10 minutes @ (Mo-Su 00:00-24:00),15 minutes @ (Mo-Su 00:00-24:00),20 minutes @ (Mo-Su 00:00-24:00),30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),1.5 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),1 night @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:authentication:disc" values="yes" />
+    <combo key="parking:right:authentication:disc:conditional" values="yes @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:authentication:disc:conditional" values="yes @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:authentication:disc:conditional" values="yes @ (Mo-Su 00:00-24:00)" />
+<!-- legal attributes (fee) -->
+    <combo key="parking:left:fee" values="yes,no" />
+    <combo key="parking:right:fee" values="yes,no" />
+    <combo key="parking:both:fee" values="yes,no" />
+    <combo key="parking:left:fee:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:fee:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:fee:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00)" />
+<!-- legal attributes (action-based restrictions in general) -->
+    <combo key="parking:left:restriction" values="no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction" values="no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction" values="no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+<!-- legal attributes (action-based restrictions for specific transport modes) -->
+    <combo key="parking:left:restriction:motorcar" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:motorcar" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:motorcar" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:motorcar:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:motorcar:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:motorcar:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:motorhome" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:motorhome" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:motorhome" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:motorhome:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:motorhome:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:motorhome:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:goods" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:goods" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:goods" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:goods:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:goods:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:goods:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:hgv" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:hgv" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:hgv" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:hgv:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:hgv:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:hgv:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:bus" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:bus" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:bus" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:bus:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:bus:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:bus:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:taxi" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:taxi" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:taxi" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:taxi:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:taxi:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:taxi:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:car_sharing" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:car_sharing" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:car_sharing" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:car_sharing:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:car_sharing:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:car_sharing:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:emergency" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:emergency" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:emergency" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:emergency:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:emergency:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:emergency:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:left:restriction:disabled" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:right:restriction:disabled" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:both:restriction:disabled" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="parking:left:restriction:disabled:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:disabled:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:disabled:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+<!-- legal attributes (zone) -->
+    <combo key="parking:left:zone" />
+    <combo key="parking:right:zone" />
+    <combo key="parking:both:zone" />
+<!-- reason -->
+    <combo key="parking:left:reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="parking:right:reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="parking:both:reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="parking:left:restriction:reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="parking:right:restriction:reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="parking:both:restriction:reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="parking:left:restriction:reason:conditional" values="bus_lane @ (Mo-Su 00:00-24:00),clearway @ (Mo-Su 00:00-24:00),loading_zone @ (Mo-Su 00:00-24:00),passenger_loading_zone @ (Mo-Su 00:00-24:00),street_cleaning @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:right:restriction:reason:conditional" values="bus_lane @ (Mo-Su 00:00-24:00),clearway @ (Mo-Su 00:00-24:00),loading_zone @ (Mo-Su 00:00-24:00),passenger_loading_zone @ (Mo-Su 00:00-24:00),street_cleaning @ (Mo-Su 00:00-24:00)" />
+    <combo key="parking:both:restriction:reason:conditional" values="bus_lane @ (Mo-Su 00:00-24:00),clearway @ (Mo-Su 00:00-24:00),loading_zone @ (Mo-Su 00:00-24:00),passenger_loading_zone @ (Mo-Su 00:00-24:00),street_cleaning @ (Mo-Su 00:00-24:00)" />
+
+<!-- 2 - parking as separate geometry with amenity=parking -->
+
+<!-- physical attributes -->
+    <combo key="parking" values="surface,street_side,lane,on_kerb,half_on_kerb,shoulder,underground,multi-storey,rooftop" />
+    <combo key="orientation" values="parallel,diagonal,perpendicular" />
+    <combo key="markings" values="yes,no" />
+    <combo key="direction" values="back_in,head_in" />
+<!-- legal attributes -->
+    <combo key="access:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00),private @ (Mo-Su 00:00-24:00),permissive @ (Mo-Su 00:00-24:00),permit @ (Mo-Su 00:00-24:00),customers @ (Mo-Su 00:00-24:00)" />
+    <combo key="maxstay" values="2 minutes,3 minutes,5 minutes,10 minutes,15 minutes,20 minutes,30 minutes,1 hour,1.5 hour,2 hours,1 day,3 days,1 week,1 night,3 nights" />
+    <combo key="maxstay:conditional" values="no @ residents,2 minutes @ (Mo-Su 00:00-24:00),3 minutes @ (Mo-Su 00:00-24:00),5 minutes @ (Mo-Su 00:00-24:00),10 minutes @ (Mo-Su 00:00-24:00),15 minutes @ (Mo-Su 00:00-24:00),20 minutes @ (Mo-Su 00:00-24:00),30 minutes @ (Mo-Su 00:00-24:00),1 hour @ (Mo-Su 00:00-24:00),1.5 hour @ (Mo-Su 00:00-24:00),2 hours @ (Mo-Su 00:00-24:00),1 day @ (Mo-Su 00:00-24:00),3 days @ (Mo-Su 00:00-24:00),1 week @ (Mo-Su 00:00-24:00),1 night @ (Mo-Su 00:00-24:00),3 nights @ (Mo-Su 00:00-24:00)" />
+    <combo key="authentication:disc" values="yes" />
+    <combo key="authentication:disc:conditional" values="yes @ (Mo-Su 00:00-24:00)" />
+    <combo key="fee:conditional" values="yes @ (Mo-Su 00:00-24:00),no @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction" values="no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="zone" />
+    <combo key="reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="restriction:reason" values="bus_lane,clearway,cycleway,dual_carriage,fire_lane,junction,loading_zone,narrow,passenger_loading_zone,street_cleaning,turnaround" />
+    <combo key="restriction:reason:conditional" values="bus_lane @ (Mo-Su 00:00-24:00),clearway @ (Mo-Su 00:00-24:00),loading_zone @ (Mo-Su 00:00-24:00),passenger_loading_zone @ (Mo-Su 00:00-24:00),street_cleaning @ (Mo-Su 00:00-24:00)" />
+<!-- legal attributes (restrictions for specific transport modes) -->
+    <combo key="restriction:motorcar" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:motorcar:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:motorhome" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:motorhome:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:goods" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:goods:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:hgv" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:hgv:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:bus" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:bus:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:taxi" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:taxi:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:car_sharing" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:car_sharing:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:emergency" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:emergency:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+    <combo key="restriction:disabled" values="none,no_parking,no_standing,no_stopping,loading_only,charging_only" />
+    <combo key="restriction:disabled:conditional" values="none @ (Mo-Su 00:00-24:00),no_parking @ (Mo-Su 00:00-24:00),no_standing @ (Mo-Su 00:00-24:00),no_stopping @ (Mo-Su 00:00-24:00),loading_only @ (Mo-Su 00:00-24:00),charging_only @ (Mo-Su 00:00-24:00)" />
+  </item>
+</presets>
