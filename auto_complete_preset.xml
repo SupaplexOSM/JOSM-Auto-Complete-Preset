@@ -94,6 +94,8 @@
     <combo key="crossing:kerb_extension" values="left,right,both" />
     <combo key="crossing:buffer_marking" values="left,right,both" />
     <combo key="crossing:buffer_protection" values="left,right,both" />
+<!-- surface:colour -->
+    <combo key="surface:colour" values="red,green" />
 <!-- bicycle_parking:position -->
     <combo key="bicycle_parking:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
 <!-- bicycle_rental:position -->
@@ -105,17 +107,31 @@
     <combo key="lane_markings" values="yes,no" />
 <!-- maxspeed:conditional -->
     <combo key="maxspeed:conditional" />
+<!-- maxwidth:physical -->
+    <combo key="maxwidth:physical" />
+<!-- width:effective -->
+    <combo key="width:effective" />
 <!-- dual_carriageway -->
     <combo key="dual_carriageway" values="yes" />
 <!-- area:highway -->
     <combo key="area:highway" values="motorway,primary,secondary,tertiary,residential,unclassified,pedestrian,living_street,service,footway,cycleway,path,steps,traffic_island,prohibited,bus_stop,shoulder" />
+<!-- road_marking -->
+    <combo key="road_marking" values="left,right,through,dash,stop_line,gore_chevron,traffic_sign" />
+<!-- stop_line -->
+    <combo key="stop_line" values="solid_line,dashed_line,sharks_teeth" />
 <!-- amenity -->
-    <combo key="amenity" values="cyclist_leaning_rail,traffic_park" />
+    <combo key="amenity" values="cyclist_leaning_rail,traffic_park,loading_ramp" />
 <!-- leisure -->
     <combo key="leisure" values="parklet" />
+<!-- demolished:building -->
+    <combo key="demolished:building" />
 <!-- parklet -->
     <combo key="parklet:greenery" values="yes,no" />
     <combo key="parklet:seatings" values="yes,no" />
+<!-- street:name -->
+    <combo key="street:name" />
+<!-- obstacle:parking -->
+    <combo key="obstacle:parking" values="yes" />
 <!-- pitch:net -->
     <combo key="pitch:net" values="yes,no" />
 <!-- outdoor_seating -->
@@ -124,7 +140,7 @@
     <combo key="post_box:type" values="pillar,lamp" />
     <combo key="post_box:apertures" />
 <!-- barrier -->
-    <combo key="barrier" values="collision_protection,barrier_board,palisade,parking_lane" />
+    <combo key="barrier" values="collision_protection,barrier_board,palisade,parking_lane,rock" />
 <!-- natural -->
     <combo key="natural" values="tree_stump" />
 <!-- landuse -->
@@ -132,20 +148,42 @@
 <!-- landcover -->
     <combo key="landcover" values="ground,gravel,woodchips" />
 <!-- man_made -->
-    <combo key="man_made" values="planter" />
+    <combo key="man_made" values="planter,gantry,pole" />
+<!-- gantry:type -->
+    <combo key="gantry:type" values="traffic_signals" />
+<!-- pole:type -->
+    <combo key="pole:type" values="traffic_signals" />
 <!-- highway -->
     <combo key="highway" values="traffic_sign" />
+<!-- traffic_sign -->
+    <combo key="traffic_sign" values="street_name_sign,none" />
+<!-- footway -->
+    <combo key="footway" values="crossing,link" />
+<!-- cycleway -->
+    <combo key="cycleway" values="crossing,link" />
+<!-- bicycle -->
+    <combo key="bicycle" values="optional_sidepath" />
+    <combo key="bicycle:forward" values="optional_sidepath" />
+    <combo key="bicycle:backward" values="optional_sidepath" />
 <!-- playground -->
-    <combo key="playground" values="wobble_bridge,wobble_board,balance,climbing,climbing_pole,seat,ladder,steps,rotator,rotator_stick" />
+    <combo key="playground" values="belt_bridge,spring_board,hamster_wheel,rope_swing,ride_on,track,blackboard,marble_run,musical_instrument,table,seat,hammock,parallel_bars,bannister_bars,steps,ladder,wobble_bridge,platform,rope_traverse,stepping_stone,stepping_post,climbing_slope,climbing_pole,monkey_bars,spinner,spinning_disc,spinner_bowl,chute,sieve,sand_wheel,sand_seesaw,sand_pulley,excavator,pump,water_channel,water_stream,water_seesaw,water_basin,water_barrier,archimedes_screw,water_wheel,water_cannon,water_sprayer,mound,dome,balance,climbing,rotator,water,sand" />
     <combo key="provided_for:toddler" values="yes" />
 <!-- support -->
     <combo key="support" values="pole,wall_mounted,ground,wall,street_lamp,traffic_sign" />
 <!-- waste -->
     <combo key="waste" values="trash,trash;cigarettes" />
+<!-- waste_basket:model -->
+    <combo key="waste_basket:model" values="bubble" />
+<!-- manhole -->
+    <combo key="manhole" values="subway" />
 <!-- operator -->
     <combo key="operator" values="Berliner Stadtreinigung" />
+<!-- operator:type -->
+    <combo key="operator:type" values="private,public" />
 <!-- private -->
     <combo key="private" values="residents,employees,commercial" />
+<!-- winter_service -->
+    <combo key="winter_service" values="no,limited,yes" />
 <!-- bench:type -->
     <combo key="bench:type" values="seated,stand_up,block,lounger,platform" />
 <!-- pump:style -->
