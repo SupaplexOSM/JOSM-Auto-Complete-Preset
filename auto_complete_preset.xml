@@ -6,7 +6,7 @@
 <!-- <combo key="" values="" /> -->
 
 <!-- is_sidepath -->
-    <combo key="is_sidepath" values="yes" />
+    <combo key="is_sidepath" values="yes,no" />
     <combo key="is_sidepath:of" values="motorway,motorway_link,primary,primary_link,secondary,secondary_link,tertiary,tertiary_link,residential,living_street,unclassified,pedestrian,service,cycleway" />
     <combo key="is_sidepath:of:name" />
     <combo key="is_sidepath:of:ref" />
@@ -123,15 +123,21 @@
     <combo key="amenity" values="cyclist_leaning_rail,traffic_park,loading_ramp" />
 <!-- leisure -->
     <combo key="leisure" values="parklet" />
+<!-- parking:levels -->
+    <combo key="parking:levels" />
 <!-- demolished:building -->
     <combo key="demolished:building" />
 <!-- parklet -->
     <combo key="parklet:greenery" values="yes,no" />
     <combo key="parklet:seatings" values="yes,no" />
-<!-- street:name -->
-    <combo key="street:name" />
+<!-- object:street -->
+    <combo key="object:street" />
 <!-- obstacle:parking -->
     <combo key="obstacle:parking" values="yes" />
+<!-- fire_hydrant:diameter:signed -->
+    <combo key="fire_hydrant:diameter:signed" values="no" />
+<!-- ref:signed -->
+    <combo key="ref:signed" values="no" />
 <!-- pitch:net -->
     <combo key="pitch:net" values="yes,no" />
 <!-- outdoor_seating -->
@@ -171,11 +177,15 @@
 <!-- support -->
     <combo key="support" values="pole,wall_mounted,ground,wall,street_lamp,traffic_sign" />
 <!-- waste -->
-    <combo key="waste" values="trash,trash;cigarettes" />
+    <combo key="waste" values="trash,trash;dog_excrement;cigarettes" />
 <!-- waste_basket:model -->
     <combo key="waste_basket:model" values="bubble" />
+<!-- advertising -->
+    <combo key="advertising" values="totem" />
 <!-- manhole -->
     <combo key="manhole" values="subway" />
+<!-- shape -->
+    <combo key="shape" values="circular,rectangular,square" />
 <!-- operator -->
     <combo key="operator" values="Berliner Stadtreinigung" />
 <!-- operator:type -->
