@@ -103,6 +103,23 @@
 <!-- turn:lanes -->
     <combo key="turn:lanes:forward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
     <combo key="turn:lanes:backward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
+<!-- bus/psv-lanes -->
+    <combo key="lanes:conditional" />
+    <combo key="lanes:psv" />
+    <combo key="lanes:psv:forward" />
+    <combo key="lanes:psv:backward" />
+    <combo key="lanes:psv:conditional" />
+    <combo key="lanes:psv:forward:conditional" />
+    <combo key="lanes:psv:backward:conditional" />
+    <combo key="lanes:bus" />
+    <combo key="lanes:bus:forward" />
+    <combo key="lanes:bus:backward" />
+    <combo key="lanes:bus:conditional" />
+    <combo key="lanes:bus:forward:conditional" />
+    <combo key="lanes:bus:backward:conditional" />
+<!-- placement -->
+    <combo key="placement:start" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5" />
+    <combo key="placement:end" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5" />
 <!-- lane_markings -->
     <combo key="lane_markings" values="yes,no" />
 <!-- maxspeed:conditional -->
@@ -164,7 +181,7 @@
 <!-- traffic_sign -->
     <combo key="traffic_sign" values="street_name_sign,none" />
 <!-- footway -->
-    <combo key="footway" values="crossing,link" />
+    <combo key="footway" values="crossing,link,residential" />
 <!-- cycleway -->
     <combo key="cycleway" values="crossing,link" />
 <!-- bicycle -->
