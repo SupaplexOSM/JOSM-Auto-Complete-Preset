@@ -193,6 +193,8 @@
     <combo key="provided_for:toddler" values="yes" />
 <!-- support -->
     <combo key="support" values="pole,wall_mounted,ground,wall,street_lamp,traffic_sign" />
+<!-- lamp_mount -->
+    <combo key="lamp_mount" values="bollard,angled_mast,bent_mast,high_mast,straight_mast,suspended,wall" />
 <!-- waste -->
     <combo key="waste" values="trash,trash;dog_excrement;cigarettes" />
 <!-- waste_basket:model -->
