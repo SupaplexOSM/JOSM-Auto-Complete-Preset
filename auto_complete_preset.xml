@@ -94,6 +94,7 @@
     <combo key="crossing:kerb_extension" values="left,right,both" />
     <combo key="crossing:buffer_marking" values="left,right,both" />
     <combo key="crossing:buffer_protection" values="left,right,both" />
+    <combo key="crossing:continuous" values="yes,no" />
 <!-- surface:colour -->
     <combo key="surface:colour" values="red,green" />
 <!-- bicycle_parking:position -->
