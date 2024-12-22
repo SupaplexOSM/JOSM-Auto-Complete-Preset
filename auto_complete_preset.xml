@@ -182,9 +182,11 @@
 <!-- traffic_sign -->
     <combo key="traffic_sign" values="street_name_sign,none" />
 <!-- footway -->
-    <combo key="footway" values="crossing,link,residential" />
+    <combo key="footway" values="crossing,link,traffic_island,residential" />
 <!-- cycleway -->
-    <combo key="cycleway" values="crossing,link" />
+    <combo key="cycleway" values="crossing,link,traffic_island" />
+<!-- path -->
+    <combo key="path" values="crossing,link,traffic_island,desire" />
 <!-- bicycle -->
     <combo key="bicycle" values="optional_sidepath" />
     <combo key="bicycle:forward" values="optional_sidepath" />
