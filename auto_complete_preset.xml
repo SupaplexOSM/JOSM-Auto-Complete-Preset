@@ -97,10 +97,8 @@
     <combo key="crossing:continuous" values="yes,no" />
 <!-- surface:colour -->
     <combo key="surface:colour" values="red,green" />
-<!-- bicycle_parking:position -->
-    <combo key="bicycle_parking:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
-<!-- bicycle_rental:position -->
-    <combo key="bicycle_rental:position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
+<!-- position -->
+    <combo key="position" values="sidewalk,lane,private_property,pedestrian_area,kerb_extension,park,grass_verge,street_side,parking_lot,school_ground,playground,public_property,traffic_island,driveway" />
 <!-- turn:lanes -->
     <combo key="turn:lanes:forward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
     <combo key="turn:lanes:backward" values="left|through,left|through;right,left;through|right,through|right,left|none,left|right,through|through;right,left;through|through,left|through|through;right" />
