@@ -226,5 +226,9 @@
     <combo key="source:width" values="ARCore,estimated,aerial imagery,ALKIS" />
 <!-- wikimedia_commons -->
     <combo key="wikimedia_commons" />
+<!-- subject:wikidata -->
+    <combo key="subject:wikidata" />
+<!-- subject:wikipedia -->
+    <combo key="subject:wikipedia" />
   </item>
 </presets>
