@@ -216,6 +216,8 @@
     <combo key="winter_service" values="no,limited,yes" />
 <!-- bench:type -->
     <combo key="bench:type" values="seated,stand_up,block,lounger,platform" />
+<!-- armrest -->
+    <combo key="armrest" values="yes,no" />
 <!-- pump:style -->
     <combo key="pump:style" values="FSH-L,Rümmler,Wolf,Krause,Lauchhammer,Borsig,Neue Krause,Freyer,Pankow" />
 <!-- pump:status -->
