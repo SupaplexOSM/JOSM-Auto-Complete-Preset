@@ -146,8 +146,10 @@
 <!-- parklet -->
     <combo key="parklet:greenery" values="yes,no" />
     <combo key="parklet:seatings" values="yes,no" />
-<!-- object:street -->
-    <combo key="object:street" />
+<!-- traffic_calming -->
+    <combo key="traffic_calming" values="kerb_extension" />
+<!-- street:name -->
+    <combo key="street:name" />
 <!-- obstacle:parking -->
     <combo key="obstacle:parking" values="yes" />
 <!-- fire_hydrant:diameter:signed -->
