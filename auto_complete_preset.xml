@@ -132,9 +132,19 @@
 <!-- area:highway -->
     <combo key="area:highway" values="motorway,primary,secondary,tertiary,residential,unclassified,pedestrian,living_street,service,footway,cycleway,path,steps,traffic_island,prohibited,bus_stop,shoulder" />
 <!-- road_marking -->
-    <combo key="road_marking" values="left,right,through,dash,stop_line,gore_chevron,traffic_sign" />
-<!-- stop_line -->
-    <combo key="stop_line" values="solid_line,dashed_line,sharks_teeth" />
+    <combo key="road_marking" values="stop_line,lane_divider,edge_line,crossing_edge,restriction,crossing,arrow,traffic_sign,text,symbol" />
+<!-- stroke -->
+    <combo key="stroke" values="solid,dashed,double_solid,double_dashed,sharks_teeth,zigzag" />
+<!-- stroke:left -->
+    <combo key="stroke:left" values="solid,dashed,double_solid,double_dashed,sharks_teeth,zigzag" />
+<!-- stroke:right -->
+    <combo key="stroke:right" values="solid,dashed,double_solid,double_dashed,sharks_teeth,zigzag" />
+<!-- pattern -->
+    <combo key="pattern" values="stripes,crosshatch,chevron,zigzag,chessboard,solid" />
+<!-- arrow -->
+    <combo key="arrow" values="left,slight_left,sharp_left,through,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,left;through,through;left,right;through,through;right,left;right,left;through;right,reverse;through,slide_left,slide_right,next_right,right;next_right,no_right_turn,no_left_turn,no_u_turn,no_straight_on" />
+<!-- symbol -->
+    <combo key="symbol" values="airport,bicycle,fuel,hov,train_station,motorway,parking,pedestrian,wheelchair" />
 <!-- amenity -->
     <combo key="amenity" values="cyclist_leaning_rail,traffic_park,loading_ramp" />
 <!-- leisure -->
