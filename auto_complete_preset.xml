@@ -8,8 +8,6 @@
 <!-- is_sidepath -->
     <combo key="is_sidepath" values="yes,no" />
     <combo key="is_sidepath:of" values="motorway,motorway_link,primary,primary_link,secondary,secondary_link,tertiary,tertiary_link,residential,living_street,unclassified,pedestrian,service,cycleway" />
-    <combo key="is_sidepath:of:name" />
-    <combo key="is_sidepath:of:ref" />
 <!-- cycleway:width -->
     <combo key="cycleway:left:width" />
     <combo key="cycleway:right:width" />
@@ -30,10 +28,6 @@
     <combo key="cycleway:left:lane" values="exclusive,advisory,pictogram" />
     <combo key="cycleway:right:lane" values="exclusive,advisory,pictogram" />
     <combo key="cycleway:both:lane" values="exclusive,advisory,pictogram" />
-<!-- cycleway:bicycle -->
-    <combo key="cycleway:left:bicycle" values="yes,designated" />
-    <combo key="cycleway:right:bicycle" values="yes,designated" />
-    <combo key="cycleway:both:bicycle" values="yes,designated" />
 <!-- cycleway:traffic_sign -->
     <combo key="cycleway:left:traffic_sign" values="DE:237,DE:240,DE:241,DE:239,1022-10" />
     <combo key="cycleway:right:traffic_sign" values="DE:237,DE:240,DE:241,DE:239,1022-10" />
@@ -42,9 +36,6 @@
     <combo key="separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
     <combo key="separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
     <combo key="separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
-    <combo key="cycleway:separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
-    <combo key="cycleway:separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
-    <combo key="cycleway:separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
     <combo key="cycleway:left:separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
     <combo key="cycleway:left:separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
     <combo key="cycleway:left:separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
@@ -54,29 +45,36 @@
     <combo key="cycleway:both:separation:left" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
     <combo key="cycleway:both:separation:right" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
     <combo key="cycleway:both:separation:both" values="bollard,flex_post,vertical_panel,studs,bump,planter,kerb,fence,jersey_barrier,guard_rail,structure,ditch,greenery,tree_row,no,cone" />
+<!-- buffer -->
+    <combo key="buffer:left" values="yes,no" />
+    <combo key="buffer:right" values="yes,no" />
+    <combo key="buffer:both" values="yes,no" />
+    <combo key="cycleway:left:buffer:left" values="yes,no" />
+    <combo key="cycleway:left:buffer:right" values="yes,no" />
+    <combo key="cycleway:left:buffer:both" values="yes,no" />
+    <combo key="cycleway:right:buffer:left" values="yes,no" />
+    <combo key="cycleway:right:buffer:right" values="yes,no" />
+    <combo key="cycleway:right:buffer:both" values="yes,no" />
+    <combo key="cycleway:both:buffer:left" values="yes,no" />
+    <combo key="cycleway:both:buffer:right" values="yes,no" />
+    <combo key="cycleway:both:buffer:both" values="yes,no" />
 <!-- marking -->
     <combo key="marking:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
     <combo key="marking:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
     <combo key="marking:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:separation:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:separation:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:separation:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:left:separation:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:left:separation:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:left:separation:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:right:separation:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:right:separation:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:right:separation:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:both:separation:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:both:separation:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
-    <combo key="cycleway:both:separation:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:left:marking:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:left:marking:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:left:marking:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:right:marking:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:right:marking:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:right:marking:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:both:marking:left" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:both:marking:right" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
+    <combo key="cycleway:both:marking:both" values="solid_line,dashed_line,double_solid_line,barred_area,pictogram,surface" />
 <!-- traffic_mode -->
     <combo key="traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
     <combo key="traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
     <combo key="traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
-    <combo key="cycleway:traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
-    <combo key="cycleway:traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
-    <combo key="cycleway:traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
     <combo key="cycleway:left:traffic_mode:left" values="no,motor_vehicle,parking,psv,bicycle,foot" />
     <combo key="cycleway:left:traffic_mode:right" values="no,motor_vehicle,parking,psv,bicycle,foot" />
     <combo key="cycleway:left:traffic_mode:both" values="no,motor_vehicle,parking,psv,bicycle,foot" />
@@ -95,6 +93,8 @@
     <combo key="crossing:buffer_marking" values="left,right,both" />
     <combo key="crossing:buffer_protection" values="left,right,both" />
     <combo key="crossing:continuous" values="yes,no" />
+<!-- kerb -->
+    <combo key="kerb" values="flush;lowered" />
 <!-- surface:colour -->
     <combo key="surface:colour" values="red,green" />
 <!-- position -->
@@ -198,9 +198,9 @@
 <!-- path -->
     <combo key="path" values="crossing,link,traffic_island,desire" />
 <!-- bicycle -->
-    <combo key="bicycle" values="optional_sidepath" />
-    <combo key="bicycle:forward" values="optional_sidepath" />
-    <combo key="bicycle:backward" values="optional_sidepath" />
+    <combo key="bicycle" values="use_sidepath,optional_sidepath,no" />
+    <combo key="bicycle:forward" values="use_sidepath,optional_sidepath,no" />
+    <combo key="bicycle:backward" values="use_sidepath,optional_sidepath,no" />
 <!-- playground -->
     <combo key="playground" values="belt_bridge,spring_board,hamster_wheel,rope_swing,ride_on,track,blackboard,marble_run,musical_instrument,table,seat,hammock,parallel_bars,bannister_bars,steps,ladder,wobble_bridge,platform,rope_traverse,stepping_stone,stepping_post,climbing_slope,climbing_pole,monkey_bars,spinner,spinning_disc,spinner_bowl,chute,sieve,sand_wheel,sand_seesaw,sand_pulley,excavator,pump,water_channel,water_stream,water_seesaw,water_basin,water_barrier,archimedes_screw,water_wheel,water_cannon,water_sprayer,mound,dome,balance,climbing,rotator,water,sand" />
     <combo key="provided_for:toddler" values="yes" />
