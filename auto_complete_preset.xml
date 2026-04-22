@@ -121,6 +121,19 @@
     <combo key="placement:end" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5" />
 <!-- lane_markings -->
     <combo key="lane_markings" values="yes,no" />
+<!-- width:lanes -->
+    <combo key="width:lanes" />
+    <combo key="width:lanes:forward" />
+    <combo key="width:lanes:backward" />
+    <combo key="width:lanes:both_ways" />
+    <combo key="width:lanes:start" />
+    <combo key="width:lanes:end" />
+    <combo key="width:lanes:forward:start" />
+    <combo key="width:lanes:forward:end" />
+    <combo key="width:lanes:backward:start" />
+    <combo key="width:lanes:backward:end" />
+    <combo key="width:lanes:both_ways:start" />
+    <combo key="width:lanes:both_ways:end" />
 <!-- maxspeed:conditional -->
     <combo key="maxspeed:conditional" />
 <!-- maxwidth:physical -->
