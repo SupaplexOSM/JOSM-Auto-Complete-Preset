@@ -153,7 +153,7 @@
 <!-- stroke:right -->
     <combo key="stroke:right" values="solid,dashed,double_solid,double_dashed,sharks_teeth,zigzag" />
 <!-- pattern -->
-    <combo key="pattern" values="stripes,crosshatch,chevron,zigzag,chessboard,solid" />
+    <combo key="pattern" values="stripes,crosshatch,x,chevron,zigzag,chessboard,solid,none" />
 <!-- arrow -->
     <combo key="arrow" values="left,slight_left,sharp_left,through,right,slight_right,sharp_right,reverse,merge_to_left,merge_to_right,left;through,through;left,right;through,through;right,left;right,left;through;right,reverse;through,slide_left,slide_right,next_right,right;next_right,no_right_turn,no_left_turn,no_u_turn,no_straight_on" />
 <!-- symbol -->
